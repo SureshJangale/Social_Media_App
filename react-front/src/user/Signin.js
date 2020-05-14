@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
-import {signin, authenticate} from '../auth'
+import { signin, authenticate } from '../auth'
 
 export default class Signin extends Component {
     constructor() {
@@ -92,9 +92,10 @@ export default class Signin extends Component {
                     {error}
                 </div>
 
-                {loading ? (<div className="jumbotron text-center">
-                    <h2>Loading...</h2>
-                </div>
+                {loading ? (
+                    <div className="jumbotron text-center">
+                        <h2>Loading...</h2>
+                    </div>
                 ) : (
                         ""
                     )}
